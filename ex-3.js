@@ -6,19 +6,12 @@ const todos = [
   { topic: "Clean the room", completed: true },
 ];
 
-function getTodoTopics(todos) {
-  // Start coding here
+function getTodoTopics(todos){
+  const todoTopics = todos.map((todo) => {
+    return todo.topic;
+  });
+  return todoTopics;
 }
-
 getTodoTopics(todos);
+console.log(getTodoTopics(todos));
 
-/* 
-	Output:
-	[
-		'Doing pre-work',
-		'Workout',
-		'Playing computer games',
-		'Relax',
-		'Clean the room'
-	]
-*/
